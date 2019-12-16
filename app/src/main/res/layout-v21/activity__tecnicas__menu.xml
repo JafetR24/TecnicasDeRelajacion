@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Tecnicas_Menu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing"
+                android:minHeight="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_background_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_01"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_tec_01"
+                                android:layout_gravity="center"
+                                android:layout_column="0"/>
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="5dp"
+                                android:text="@string/tecnica_descripcion_01" />
+                        </TableRow>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="*">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal">
+
+                                <RatingBar
+                                    style="@android:style/Widget.Material.RatingBar.Indicator"
+                                    android:layout_width="135dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:numStars="5"
+                                    android:rating="3"
+                                    android:theme="@style/styleRatingBar"/>.
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="20dp"
+                                    android:textSize="14sp"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_gravity="fill_vertical"
+                                    android:textColor="@color/White"
+                                    android:textStyle="bold"
+                                    android:text="@string/card_btn_text"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing"
+                android:minHeight="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_background_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_02"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_tec_02"
+                                android:layout_gravity="center"
+                                android:layout_column="0"/>
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="5dp"
+                                android:text="@string/tecnica_descripcion_02" />
+                        </TableRow>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="*">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal">
+
+                                <RatingBar
+                                    style="@android:style/Widget.Material.RatingBar.Indicator"
+                                    android:layout_width="135dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:numStars="5"
+                                    android:rating="3"
+                                    android:theme="@style/styleRatingBar"/>.
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_02"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_gravity="fill_vertical"
+                                    android:text="@string/card_btn_text"
+                                    android:textColor="@color/White"
+                                    android:textStyle="bold"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing"
+                android:minHeight="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_background_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_03"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_tec_03"
+                                android:layout_gravity="center"
+                                android:layout_column="0"/>
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="5dp"
+                                android:text="@string/tecnica_descripcion_03" />
+                        </TableRow>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="*">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal">
+
+                                <RatingBar
+                                    style="@android:style/Widget.Material.RatingBar.Indicator"
+                                    android:layout_width="135dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:numStars="5"
+                                    android:rating="3"
+                                    android:theme="@style/styleRatingBar"/>.
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_03"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_gravity="fill_vertical"
+                                    android:text="@string/card_btn_text"
+                                    android:textColor="@color/White"
+                                    android:textStyle="bold"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing"
+                android:minHeight="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_background_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_04"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_tec_04"
+                                android:layout_gravity="center"
+                                android:layout_column="0"/>
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="5dp"
+                                android:text="@string/tecnica_descripcion_04" />
+                        </TableRow>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="*">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal">
+
+                                <RatingBar
+                                    style="@android:style/Widget.Material.RatingBar.Indicator"
+                                    android:layout_width="135dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:numStars="5"
+                                    android:rating="3"
+                                    android:theme="@style/styleRatingBar"/>.
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_04"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_gravity="fill_vertical"
+                                    android:text="@string/card_btn_text"
+                                    android:textColor="@color/White"
+                                    android:textStyle="bold"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing"
+                android:minHeight="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_background_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_05"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_tec_05"
+                                android:layout_gravity="center"
+                                android:layout_column="0"/>
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="5dp"
+                                android:text="@string/tecnica_descripcion_05" />
+                        </TableRow>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="*">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal">
+
+                                <RatingBar
+                                    style="@android:style/Widget.Material.RatingBar.Indicator"
+                                    android:layout_width="135dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:numStars="5"
+                                    android:rating="3"
+                                    android:theme="@style/styleRatingBar"/>.
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_05"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_gravity="fill_vertical"
+                                    android:text="@string/card_btn_text"
+                                    android:textColor="@color/White"
+                                    android:textStyle="bold"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mtrl_card_spacing"
+                android:layout_marginTop="@dimen/mtrl_card_spacing"
+                android:layout_marginRight="@dimen/mtrl_card_spacing"
+                android:minHeight="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_background_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_06"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_tec_06"
+                                android:layout_gravity="center"
+                                android:layout_column="0"/>
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:padding="5dp"
+                                android:text="@string/tecnica_descripcion_06" />
+                        </TableRow>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="*">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal">
+
+                                <RatingBar
+                                    style="@android:style/Widget.Material.RatingBar.Indicator"
+                                    android:layout_width="135dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:numStars="5"
+                                    android:rating="3"
+                                    android:theme="@style/styleRatingBar"/>.
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btn_06"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_gravity="fill_vertical"
+                                    android:text="@string/card_btn_text"
+                                    android:textColor="@color/White"
+                                    android:textStyle="bold"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

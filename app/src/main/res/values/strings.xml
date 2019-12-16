@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Técnicas De Relajación</string>
+    <string name="app_title">Auuuummmm</string>
+    <string name="loging_status">true</string>
+
+    <string name="descripcion_01">Las técnicas de relajación pueden reducir los síntomas
+        del estrés y ayudarte a disfrutar de una mejor calidad de vida, en especial, si padeces
+        una enfermedad. Explora las técnicas de relajación que puedes hacer por tu cuenta.</string>
+
+    <string name="descripcion_02">A continuación, te presentamos algunos tipos de técnicas de
+        relajación.</string>
+
+    <string name="title_01">Respiración Profunda</string>
+    <string name="title_02">Relajación Muscular Progresiva</string>
+    <string name="title_03">Meditación de Escaneo Corporal</string>
+    <string name="title_04">Visualización</string>
+    <string name="title_05">Auto Masaje</string>
+    <string name="title_06">Musicoterapia </string>
+
+    <string name="tecnica_descripcion_01">Con su enfoque en las respiraciones completas y de limpieza, la respiración profunda es una técnica de relajación simple pero poderosa.</string>
+    <string name="tecnica_descripcion_02">La relajación muscular progresiva es un proceso de dos pasos en el que tensa y relaja sistemáticamente diferentes grupos musculares del cuerpo. </string>
+    <string name="tecnica_descripcion_03">Este es un tipo de meditación que enfoca su atención en varias partes de su cuerpo. </string>
+    <string name="tecnica_descripcion_04">La visualización es una variación de la meditación tradicional que implica imaginar una escena en la que te sientas en paz.</string>
+    <string name="tecnica_descripcion_05">Practicar el auto masaje o intercambiar masajes con un ser querido ayuda a reducir el estrés, aliviar el dolor y aliviar la tensión muscular..</string>
+    <string name="tecnica_descripcion_06">La Musicoterapia es una terapia que utiliza la música para mejorar el estado de salud y bienestar del paciente.</string>
+
+    <string name="card_btn_text">Ver Tecnica</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>
