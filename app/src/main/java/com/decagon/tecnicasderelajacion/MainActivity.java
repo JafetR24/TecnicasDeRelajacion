@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         buttonA = findViewById(R.id.btnMA);
+
         buttonA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent_acc = new Intent(view.getContext(), Login.class);
                 startActivity(intent_acc);
-                finish();
             }
         });
 
@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent_reg = new Intent(view.getContext(), Registro.class);
                 startActivity(intent_reg);
-                finish();
             }
         });
     }

@@ -5,11 +5,9 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class BaseDatos extends SQLiteOpenHelper{
-    public static final String DataBaseName="Relajacion.db";
-    public static final int dbversion=1;
 
     public BaseDatos(Context context, String name, CursorFactory factory, int version) {
-        super(context, DataBaseName, factory, dbversion);
+        super(context, name, factory, version);
         // TODO Auto-generated constructor stub
     }
 
@@ -17,7 +15,7 @@ public class BaseDatos extends SQLiteOpenHelper{
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
         //Se ejecuta la primera vez para crear la BD
-        db.execSQL("Create table usuario(_id INTEGER PRIMARY KEY AUTOINCREMENT, NOMBRE TEXT, CORREO TEXT, CONTRASEÑA TEXT);");
+        db.execSQL("CREATE TABLE usuario(_id INTEGER PRIMARY KEY AUTOINCREMENT, NOMBRE TEXT NOT NULL, CORREO TEXT NOT NULL, CONTRA TEXT NOT NULL);");
         db.execSQL("Create table tecnico(_id INTEGER PRIMARY KEY AUTOINCREMENT, NOMBRE TEXT, DESCRIPCION TEXT, RATING INTEGER);");
         db.execSQL("Create table comentario(_id INTEGER PRIMARY KEY AUTOINCREMENT, COMENTARIO TEXT);");
     }

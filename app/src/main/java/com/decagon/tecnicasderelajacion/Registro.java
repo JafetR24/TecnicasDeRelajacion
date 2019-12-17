@@ -33,21 +33,39 @@ public class Registro extends AppCompatActivity {
     }
 
     private void registrardatos() {
-        BaseDatos bd = new BaseDatos(this, "Relajacion.db", null, 1);
+        BaseDatos bd = new BaseDatos(this, "relajacion.db", null, 1);
         final SQLiteDatabase db = bd.getWritableDatabase();
-        String nombre = eCr.getText().toString();
-        String correo = eCn.getText().toString();
-        String contra = eNm.getText().toString();
+
+        String nombre = eNm.getText().toString();
+        String correo = eCr.getText().toString();
+        String contra = eCn.getText().toString();
+
         ContentValues registrar = new ContentValues();
+
         registrar.put("NOMBRE", nombre);
         registrar.put("CORREO", correo);
-        registrar.put("CONTRASEÑA", contra);
-        db.insert("votantes", null, registrar);
+        registrar.put("CONTRA", contra);
+
+        long value = db.insert("usuario", null, registrar);
+
         db.close();
-        Toast.makeText(this, "Datos agregados", Toast.LENGTH_SHORT).show();
-        Intent intent_tecnica = new Intent(this,MainActivity.class);
-        startActivity(intent_tecnica);
-        finish();
+
+        if( value != -1) {
+            Toast.makeText(this, "Datos agregados", Toast.LENGTH_SHORT).show();
+            Intent intent_tecnica = new Intent(this, MainActivity.class);
+            startActivity(intent_tecnica);
+            finish();
+        }
+        else{
+            Toast.makeText(this, "Datos no agregados: " + value, Toast.LENGTH_SHORT).show();
+        }
+        clearEditText();
+    }
+
+    private void clearEditText() {
+        eCr.setText("");
+        eCn.setText("");
+        eNm.setText("");
     }
 
 }

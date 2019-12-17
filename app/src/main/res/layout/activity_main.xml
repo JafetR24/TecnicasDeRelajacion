@@ -7,60 +7,69 @@
     android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
-        android:layout_width="275dp"
-        android:layout_height="190dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/gif_relaxing"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="334dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/descripcion_01"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/btnMReg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gifImageView"
-        app:layout_constraintVertical_bias="0.0" />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/gif_relaxing" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnMReg"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="120dp"
-        android:text="Registrarse"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnMA"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/descripcion_01"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnMA"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="120dp"
-        android:text="Acceder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMReg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="20dp"
+            android:text="Registrarse"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/White"
+            android:textSize="24sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMA"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Acceder"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/White"/>
+
+    </LinearLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
