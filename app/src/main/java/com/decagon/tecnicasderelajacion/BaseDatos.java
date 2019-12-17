@@ -16,7 +16,7 @@ public class BaseDatos extends SQLiteOpenHelper{
         // TODO Auto-generated method stub
         //Se ejecuta la primera vez para crear la BD
         db.execSQL("CREATE TABLE usuario(_id INTEGER PRIMARY KEY AUTOINCREMENT, NOMBRE TEXT NOT NULL, CORREO TEXT NOT NULL, CONTRA TEXT NOT NULL);");
-        db.execSQL("Create table tecnico(_id INTEGER PRIMARY KEY AUTOINCREMENT, NOMBRE TEXT, DESCRIPCION TEXT, RATING INTEGER);");
+        db.execSQL("Create table tecnica(_id INTEGER PRIMARY KEY AUTOINCREMENT, NOMBRE TEXT, DESCRIPCION TEXT, DESCRIPCION_CORTA TEXT,RATING INTEGER);");
         db.execSQL("Create table comentario(_id INTEGER PRIMARY KEY AUTOINCREMENT, COMENTARIO TEXT);");
     }
 
@@ -24,7 +24,7 @@ public class BaseDatos extends SQLiteOpenHelper{
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // TODO Auto-generated method stub
         db.execSQL("DROP TABLE IF EXISTS usuario;");
-        db.execSQL("DROP TABLE IF EXISTS contacto;");
+        db.execSQL("DROP TABLE IF EXISTS tecnica;");
         db.execSQL("DROP TABLE IF EXISTS comentario;");
         onCreate(db);
     }

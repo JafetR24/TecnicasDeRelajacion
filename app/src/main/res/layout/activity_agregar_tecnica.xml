@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etNT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Nombre de tecnica"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etDC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etD"
+        android:layout_width="370dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="264dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descripcion de tecnica"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir Tecnica"
+        app:layout_constraintBottom_toTopOf="@+id/etNT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAgregar"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="Agregar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etD" />
+
+    <EditText
+        android:id="@+id/etDC"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descripcion corta (Max 2 lineas)"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/etD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
