@@ -36,8 +36,8 @@ public class Login extends AppCompatActivity {
     public boolean verificarlogin() {
         BaseDatos bd = new BaseDatos(getApplicationContext(), "relajacion.db", null, 1);
         SQLiteDatabase db = bd.getReadableDatabase();
-        String correo = eCr.getText().toString();
-        String contra = eCn.getText().toString();
+        String correo = eCr.getText().toString().trim();
+        String contra = eCn.getText().toString().trim();
 
         Cursor c = db.query("usuario",// Selecting Table
                 new String[]{"nombre, correo, contra"},//Selecting columns want to query
@@ -50,7 +50,7 @@ public class Login extends AppCompatActivity {
             Toast.makeText(this, "Bienvenido " + c.getString(0), Toast.LENGTH_SHORT).show();
             Intent intent_tecnica = new Intent(this,Activity_Tecnicas_Menu.class);
             startActivity(intent_tecnica);
-            finish();
+            finishAffinity();
             clearEditText();
             return true;
         }else{

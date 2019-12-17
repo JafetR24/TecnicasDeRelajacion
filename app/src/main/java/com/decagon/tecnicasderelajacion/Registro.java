@@ -36,9 +36,9 @@ public class Registro extends AppCompatActivity {
         BaseDatos bd = new BaseDatos(this, "relajacion.db", null, 1);
         final SQLiteDatabase db = bd.getWritableDatabase();
 
-        String nombre = eNm.getText().toString();
-        String correo = eCr.getText().toString();
-        String contra = eCn.getText().toString();
+        String nombre = eNm.getText().toString().trim();
+        String correo = eCr.getText().toString().trim();
+        String contra = eCn.getText().toString().trim();
 
         ContentValues registrar = new ContentValues();
 

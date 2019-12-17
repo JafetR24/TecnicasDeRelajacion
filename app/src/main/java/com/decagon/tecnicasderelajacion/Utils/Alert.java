@@ -1,7 +1,6 @@
 package com.decagon.tecnicasderelajacion.Utils;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.widget.Toast;
 
@@ -35,13 +34,10 @@ public class Alert {
             public void onClick(DialogInterface dialog, int id) {
                 //  Action for 'NO' Button
                 dialog.cancel();
-                Toast.makeText(mActivity,"you choose no action for alertbox",
-                        Toast.LENGTH_SHORT).show();
             }
         });
 
         AlertDialog alert = mDialog.create();
-        //Setting the title manually
         alert.setTitle(R.string.app_title);
         alert.show();
     }
