@@ -14,10 +14,9 @@ public class BaseDatos extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
-        //Se ejecuta la primera vez para crear la BD
-        db.execSQL("CREATE TABLE usuario(_id INTEGER PRIMARY KEY AUTOINCREMENT, NOMBRE TEXT NOT NULL, CORREO TEXT NOT NULL, CONTRA TEXT NOT NULL);");
-        db.execSQL("Create table tecnica(_id INTEGER PRIMARY KEY AUTOINCREMENT, NOMBRE TEXT, DESCRIPCION TEXT, DESCRIPCION_CORTA TEXT,RATING INTEGER);");
-        db.execSQL("Create table comentario(_id INTEGER PRIMARY KEY AUTOINCREMENT, COMENTARIO TEXT);");
+        db.execSQL("CREATE TABLE  usuario(_id INTEGER, NOMBRE TEXT NOT NULL, CORREO TEXT NOT NULL, CONTRA TEXT NOT NULL);");
+        db.execSQL("Create table tecnica(_id INTEGER, NOMBRE TEXT, DESCRIPCION TEXT, DESCRIPCION_CORTA TEXT,RATING INTEGER);");
+        db.execSQL("Create table comentario(_id INTEGER, COMENTARIO TEXT);");
     }
 
     @Override
